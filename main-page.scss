@@ -349,6 +349,7 @@ header {
       width: 100%;
     }
   }
+}
   .block-menu {
     margin-left: 40px;
     margin-top: 12px;
@@ -401,16 +402,81 @@ header {
     width: 1280px;
     margin-left: 40px;
     margin-top: 40px;
-
-    display: grid;
     overflow: hidden;
+    display: grid;
     gap: 40px;
     grid-template-columns: repeat(4, 342px);
 
     .block-home {
-      height: 382px;
-      background-color: #047857;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
       flex-shrink: 0;
+      img{
+        height: 382px;
+        border-radius: 24px;
+
+      }
+      .teg {
+        position: absolute;
+        top: 332px;
+        left: 16px;
+        display: inline-flex;
+        padding: 8px 16px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 32px;
+        h7 {
+          font-weight: 500;
+        }
+      }
+      .popular {
+        background: var(--red-100, #fee2e2);
+        h7 {
+          color: var(--red-500, #ef4444);
+        }
+      }
+      .new-house{
+        background: var(--blue-100, #DBEAFE);
+        h7 {
+          color: var(--blue-700, #1D4ED8);
+        }
+      }
+      .best-deal{
+        background: var(--green-100, #D1FAE5);
+        h7 {
+          color: var(--green-700, #047857);
+        }
+      }
+    }
+    
+    .name-price {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .seller {
+      display: flex;
+      width: 340px;
+      align-items: center;
+      gap: 16px;
+      img {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 40px;
+      }
+      .description {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      h7 {
+        line-height: 22px; /* 157.143% */
+        font-weight: 500;
+        color: var(--neutral-500, #888b97);
+      }
     }
   }
-}
+
