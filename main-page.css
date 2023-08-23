@@ -7,7 +7,6 @@
 body {
   position: relative;
   display: inline-block;
-  min-width: 1400x;
   padding: 40px 120px 120px 120px;
 }
 
@@ -147,10 +146,10 @@ header .right-header .sign-up h7 {
   text-transform: none;
 }
 
-.blur {
+.blur-blue {
   position: absolute;
-  filter: blur(60px);
-  opacity: 1.0000001192;
+  left: 0;
+  top: 0;
 }
 
 .blur-1 {
